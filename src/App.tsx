@@ -1,4 +1,11 @@
 import "./styles.css";
+import WebApp from "@twa-dev/sdk";
+
+WebApp.MainButton.show();
+WebApp.MainButton.setText("Alloha");
+WebApp.MainButton.onClick(() => {
+  WebApp.showAlert("ALLOHA!!!");
+});
 
 export default function App() {
   return (
