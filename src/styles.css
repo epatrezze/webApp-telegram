@@ -46,10 +46,12 @@ body {
 
 .app-item:nth-child(even) {
   margin-right: 0; /* Remove a margem à direita para o último item de cada linha */
+  flex: 1;
 }
 
 .app-item-photo {
   margin-bottom: 10px;
+  width: 150px;
 }
 
 .app-item-photo img {
