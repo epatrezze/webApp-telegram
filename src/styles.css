@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  margin: 0 auto; /* Centraliza o contador */
+  margin: 0 auto;
   font-size: 18px; /* Ajusta o tamanho da fonte */
 }
 
@@ -31,16 +31,16 @@ body {
 .app-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .app-item {
   border: 1px solid #ccc;
   border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 20px;
+  /* padding: 20px; */
+  margin: 0px 0px 20px 20px;
   width: calc(30% - 20px); /* Define a largura de cada item */
   background-color: #222; /* Cor de fundo para o tema noturno */
+  height: auto;
 }
 
 .app-item:nth-child(even) {
@@ -120,4 +120,5 @@ body {
   display: flex;
   justify-content: center; /* Centraliza os botões horizontalmente */
   margin-top: 10px;
+  margin-bottom: 20px;
 }
