@@ -17,7 +17,8 @@ declare global {
 
 window.Telegram.WebApp.HapticFeedback.notificationOccurred("success");
 
-const data = WebApp.initData;
+const data = "WebApp.initDataUnsafe";
+WebApp.sendData({ data });
 
 const App: React.FC = () => {
   const [mostrarBotoes, setMostrarBotoes] = useState<boolean>(false);
