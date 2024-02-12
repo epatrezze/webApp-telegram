@@ -17,12 +17,6 @@ declare global {
 
 window.Telegram.WebApp.HapticFeedback.notificationOccurred("success");
 
-WebApp.MainButton.show();
-WebApp.MainButton.setText("Alloha");
-WebApp.MainButton.onClick(() => {
-  WebApp.showAlert("ALLOHA!!!");
-});
-
 const data = WebApp.initData;
 
 const App: React.FC = () => {
@@ -58,6 +52,8 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
+      <p>Olá, {WebApp.initData}</p>
+      <p>Olá, {Window.toString()}</p>
       <div className="app-item">
         <div className="app-item-counter">{contador}</div>
         <div className="app-item-photo">
