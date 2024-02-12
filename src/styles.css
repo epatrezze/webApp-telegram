@@ -37,10 +37,11 @@ body {
   border: 1px solid #ccc;
   border-radius: 8px;
   /* padding: 20px; */
-  margin: 0px 0px 20px 20px;
-  width: calc(30% - 20px); /* Define a largura de cada item */
+  margin: 0px 0px 5px 5px;
+  width: 15rem; /* Define a largura de cada item */
   background-color: #222; /* Cor de fundo para o tema noturno */
   height: auto;
+  flex: 1;
 }
 
 .app-item:nth-child(even) {
