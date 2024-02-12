@@ -9,6 +9,8 @@
 .logo-container {
   display: block;
   width: 100%;
+  flex-wrap: wrap;
+  color: yellowgreen;
 }
 .app-item {
   display: flex; /* Use flexbox para alinhar os itens */

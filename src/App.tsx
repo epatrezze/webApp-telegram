@@ -54,6 +54,12 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <div className="logo-container">
+        <img
+          src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Smileys/Face%20In%20Clouds.webp"
+          alt="Face In Clouds"
+          width="25"
+          height="25"
+        />
         <h1>Olá, {WebApp.initDataUnsafe?.user?.first_name}</h1>
       </div>
       <div className="app-item">
