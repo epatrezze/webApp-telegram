@@ -3,6 +3,11 @@
   text-align: center;
   flex-wrap: wrap;
   gap: 2px;
+  display: flex;
+}
+.logo-container {
+  display: block;
+  width: 100%;
 }
 .app-item {
   display: flex; /* Use flexbox para alinhar os itens */
@@ -10,6 +15,8 @@
   align-items: center; /* Alinha os itens verticalmente ao centro */
   flex-direction: column; /* Empilha os itens verticalmente */
   height: auto;
+  flex: 1;
+  margin-bottom: 2rem;
 }
 
 .app-item-counter {

@@ -53,7 +53,83 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <p>Olá, {WebApp.initDataUnsafe?.user?.first_name}</p>
+      <div className="logo-container">
+        <h1>Olá, {WebApp.initDataUnsafe?.user?.first_name}</h1>
+      </div>
+      <div className="app-item">
+        <div className="app-item-counter">{contador}</div>
+        <div className="app-item-photo">
+          <img
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Tulip.webp"
+            alt="Tulip"
+            width="25"
+            height="25"
+            className="app-item-photo"
+          />
+        </div>
+        <div className="cafe-item-label">
+          <span className="cafe-item-title">Purple Tulipe 40g - </span>
+          <span className="cafe-item-price">$1.49</span>
+        </div>
+        <div className="botoes-container">
+          {!mostrarBotoes && (
+            <button
+              id="botao-add"
+              className="botao-add"
+              onClick={mostrarOpcoes}
+            >
+              ADD
+            </button>
+          )}
+          {mostrarBotoes && (
+            <div className="botoes-opcoes">
+              <button className="botao-opcao-negativo" onClick={decrementar}>
+                -
+              </button>
+              <button className="botao-opcao-positivo" onClick={incrementar}>
+                +
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="app-item">
+        <div className="app-item-counter">{contador}</div>
+        <div className="app-item-photo">
+          <img
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Hibiscus.webp"
+            alt="Hibiscus"
+            width="25"
+            height="25"
+            className="app-item-photo"
+          />
+        </div>
+        <div className="cafe-item-label">
+          <span className="cafe-item-title">Hibiscus 40g - </span>
+          <span className="cafe-item-price">$1.49</span>
+        </div>
+        <div className="botoes-container">
+          {!mostrarBotoes && (
+            <button
+              id="botao-add"
+              className="botao-add"
+              onClick={mostrarOpcoes}
+            >
+              ADD
+            </button>
+          )}
+          {mostrarBotoes && (
+            <div className="botoes-opcoes">
+              <button className="botao-opcao-negativo" onClick={decrementar}>
+                -
+              </button>
+              <button className="botao-opcao-positivo" onClick={incrementar}>
+                +
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
       <div className="app-item">
         <div className="app-item-counter">{contador}</div>
         <div className="app-item-photo">
@@ -67,6 +143,117 @@ const App: React.FC = () => {
         </div>
         <div className="cafe-item-label">
           <span className="cafe-item-title">Camomila 40g - </span>
+          <span className="cafe-item-price">$1.49</span>
+        </div>
+        <div className="botoes-container">
+          {!mostrarBotoes && (
+            <button
+              id="botao-add"
+              className="botao-add"
+              onClick={mostrarOpcoes}
+            >
+              ADD
+            </button>
+          )}
+          {mostrarBotoes && (
+            <div className="botoes-opcoes">
+              <button className="botao-opcao-negativo" onClick={decrementar}>
+                -
+              </button>
+              <button className="botao-opcao-positivo" onClick={incrementar}>
+                +
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="app-item">
+        <div className="app-item-counter">{contador}</div>
+        <div className="app-item-photo">
+          <img
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Four%20Leaf%20Clover.webp"
+            alt="Four Leaf Clover"
+            width="25"
+            height="25"
+            className="app-item-photo"
+          />
+        </div>
+        <div className="cafe-item-label">
+          <span className="cafe-item-title">Lucky 40g - </span>
+          <span className="cafe-item-price">$1.49</span>
+        </div>
+        <div className="botoes-container">
+          {!mostrarBotoes && (
+            <button
+              id="botao-add"
+              className="botao-add"
+              onClick={mostrarOpcoes}
+            >
+              ADD
+            </button>
+          )}
+          {mostrarBotoes && (
+            <div className="botoes-opcoes">
+              <button className="botao-opcao-negativo" onClick={decrementar}>
+                -
+              </button>
+              <button className="botao-opcao-positivo" onClick={incrementar}>
+                +
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="app-item">
+        <div className="app-item-counter">{contador}</div>
+        <div className="app-item-photo">
+          <img
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Snowflake.webp"
+            alt="Snowflake"
+            width="25"
+            height="25"
+            className="app-item-photo"
+          />
+        </div>
+        <div className="cafe-item-label">
+          <span className="cafe-item-title">Snow 40g - </span>
+          <span className="cafe-item-price">$1.49</span>
+        </div>
+        <div className="botoes-container">
+          {!mostrarBotoes && (
+            <button
+              id="botao-add"
+              className="botao-add"
+              onClick={mostrarOpcoes}
+            >
+              ADD
+            </button>
+          )}
+          {mostrarBotoes && (
+            <div className="botoes-opcoes">
+              <button className="botao-opcao-negativo" onClick={decrementar}>
+                -
+              </button>
+              <button className="botao-opcao-positivo" onClick={incrementar}>
+                +
+              </button>
+            </div>
+          )}
+        </div>
+      </div>
+      <div className="app-item">
+        <div className="app-item-counter">{contador}</div>
+        <div className="app-item-photo">
+          <img
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/High%20Voltage.webp"
+            alt="High Voltage"
+            width="25"
+            height="25"
+            className="app-item-photo"
+          />
+        </div>
+        <div className="cafe-item-label">
+          <span className="cafe-item-title">Raio 40g - </span>
           <span className="cafe-item-price">$1.49</span>
         </div>
         <div className="botoes-container">
