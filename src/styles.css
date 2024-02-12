@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: 2px;
   display: flex;
+  background-color: black;
 }
 .logo-container {
   display: block;
@@ -98,4 +99,5 @@
 .cafe-item-label {
   font-weight: bold;
   margin-top: 15px;
+  color: whitesmoke;
 }
