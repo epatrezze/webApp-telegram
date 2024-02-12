@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import WebApp from "@twa-dev/sdk";
 import "./styles.css";
+import { Telegram } from "@twa-dev/types";
+
+declare global {
+  interface Window {
+    Telegram: Telegram;
+  }
+}
+
+window.Telegram.WebApp.HapticFeedback.notificationOccurred("success");
 
 WebApp.MainButton.show();
 WebApp.MainButton.setText("Alloha");
