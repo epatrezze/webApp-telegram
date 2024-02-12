@@ -1,17 +1,59 @@
 .App {
-  font-family: sans-serif;
+  font-family: monospace;
   text-align: center;
-  display: flex;
   flex-wrap: wrap;
-  gap: 1px;
+  gap: 2px;
 }
-.card {
-  margin: 1%;
-  width: 40%;
+.app-item {
+  display: flex; /* Use flexbox para alinhar os itens */
+  justify-content: center; /* Alinha os itens horizontalmente ao centro */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  flex-direction: column; /* Empilha os itens verticalmente */
   height: auto;
 }
 
-.imagem-produtos {
-  width: 15%;
+.app-item-counter {
+  font-weight: bold;
+  justify-content: right;
+  align-items: right;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.app-item-photo {
+  width: auto;
   height: auto;
+  align-self: center;
+}
+
+.botao-add {
+  width: 100%;
+  height: auto;
+  background-color: orange;
+  color: white;
+  border-radius: 5px;
+  border-color: orange;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.botao-opcao {
+  background-color: green;
+  color: white;
+}
+
+.botoes-opcoes {
+  display: none;
+}
+
+.cafe-item-price {
+  font-weight: bold;
+}
+
+.cafe-item-title {
+  font-weight: bold;
+}
+
+.cafe-item-label {
+  font-weight: bold;
 }
