@@ -1,23 +1,39 @@
 import "./styles.css";
 import WebApp from "@twa-dev/sdk";
 
-// WebApp.MainButton.show();
-// WebApp.MainButton.setText("Alloha");
-// WebApp.MainButton.onClick(() => {
-//   WebApp.showAlert("ALLOHA!!!");
-// });
+WebApp.MainButton.show();
+WebApp.MainButton.setText("Alloha");
+WebApp.MainButton.onClick(() => {
+  WebApp.showAlert("ALLOHA!!!");
+});
 
-const data = WebApp.initData.toString();
+// const data = WebApp.initData.toString();
 
 export default function App() {
   return (
     <div className="App">
-      <div id="twa-container">
-        <h1>Hello TWA</h1>
+      <div className="card">
+        <img
+          src="https://cdn.awsli.com.br/600x450/1285/1285102/produto/53857013/0aa7b24f1a.jpg"
+          alt="Descrição da Imagem"
+          className="imagem-produtos"
+        />
+        <p>produto</p>
+
+        <button>-</button>
+        <button>+</button>
       </div>
-      <h1>Hello CodeSandbox</h1>
-      <h2>{data}</h2>
-      <h2>Start editing to see some magic happen!</h2>
+      <div className="card">
+        <img
+          src="https://cdn.awsli.com.br/600x450/1285/1285102/produto/53857013/0aa7b24f1a.jpg"
+          alt="Descrição da Imagem"
+          className="imagem-produtos"
+        />
+        <p>produto</p>
+
+        <button>-</button>
+        <button>+</button>
+      </div>
     </div>
   );
 }
