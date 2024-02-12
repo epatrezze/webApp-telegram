@@ -17,7 +17,7 @@ declare global {
 
 window.Telegram.WebApp.HapticFeedback.notificationOccurred("success");
 
-const data = "WebApp.initDataUnsafe";
+// const data = "WebApp.initDataUnsafe";
 
 const App: React.FC = () => {
   const [mostrarBotoes, setMostrarBotoes] = useState<boolean>(false);
@@ -58,13 +58,15 @@ const App: React.FC = () => {
         <div className="app-item-counter">{contador}</div>
         <div className="app-item-photo">
           <img
-            src="https://cdn.awsli.com.br/600x450/1285/1285102/produto/53857013/0aa7b24f1a.jpg"
-            alt="Descrição da Imagem"
+            src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Herb.webp"
+            alt="Herb"
+            width="25"
+            height="25"
             className="app-item-photo"
           />
         </div>
         <div className="cafe-item-label">
-          <span className="cafe-item-title">Fries: {data}</span>
+          <span className="cafe-item-title">Camomila 40g - </span>
           <span className="cafe-item-price">$1.49</span>
         </div>
         <div className="botoes-container">
@@ -78,11 +80,11 @@ const App: React.FC = () => {
             </button>
           )}
           {mostrarBotoes && (
-            <div id="botoes-opcoes" className="botoes-opcoes">
-              <button className="botao-opcao" onClick={decrementar}>
+            <div className="botoes-opcoes">
+              <button className="botao-opcao-negativo" onClick={decrementar}>
                 -
               </button>
-              <button className="botao-opcao" onClick={incrementar}>
+              <button className="botao-opcao-positivo" onClick={incrementar}>
                 +
               </button>
             </div>
