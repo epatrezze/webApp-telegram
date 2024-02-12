@@ -24,7 +24,7 @@ const App: React.FC = () => {
   const [contador, setContador] = useState<number>(0);
 
   const mostrarOpcoes = () => {
-    setMostrarBotoes(false);
+    setMostrarBotoes(true);
     if (contador === 0) {
       setContador(1);
     }
@@ -43,8 +43,9 @@ const App: React.FC = () => {
   const decrementar = () => {
     setContador((prevContador) => {
       const novoContador = prevContador - 1;
-      if (novoContador < 0) {
-        return prevContador;
+      if (novoContador <= 0) {
+        setMostrarBotoes(false);
+        return prevContador - 1;
       }
       return novoContador;
     });
@@ -78,11 +79,11 @@ const App: React.FC = () => {
           )}
           {mostrarBotoes && (
             <div id="botoes-opcoes" className="botoes-opcoes">
-              <button className="botao-opcao" onClick={incrementar}>
-                +
-              </button>
               <button className="botao-opcao" onClick={decrementar}>
                 -
+              </button>
+              <button className="botao-opcao" onClick={incrementar}>
+                +
               </button>
             </div>
           )}
