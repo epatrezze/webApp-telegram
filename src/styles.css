@@ -1,109 +1,123 @@
-.App {
-  font-family: monospace;
-  text-align: center;
-  flex-wrap: wrap;
-  gap: 2px;
-  display: flex;
-  background-color: black;
-}
-.logo-container {
-  display: block;
-  width: 100%;
-  flex-wrap: wrap;
-  color: yellowgreen;
-}
-.app-item {
-  display: flex; /* Use flexbox para alinhar os itens */
-  justify-content: center; /* Alinha os itens horizontalmente ao centro */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  flex-direction: column; /* Empilha os itens verticalmente */
-  height: auto;
-  flex: 1;
-  margin-bottom: 2rem;
+/* styles.css */
+
+body {
+  background-color: #333; /* Cor de fundo para o tema noturno */
+  color: #fff; /* Cor do texto para o tema noturno */
 }
 
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
 .app-item-counter {
-  font-weight: bold;
-  background-color: darkorange;
-  color: white;
-  border-radius: 50%;
-  font-size: 20px;
-  padding: 5px;
-  padding-left: 2%;
-  padding-right: 2%;
-  margin-left: 45%;
+  border: 2px solid #fff; /* Adiciona uma borda branca */
+  border-radius: 50%; /* Transforma o contador em um círculo */
+  width: 40px; /* Define uma largura fixa */
+  height: 40px; /* Define uma altura fixa */
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  margin: 0 auto; /* Centraliza o contador */
+  font-size: 18px; /* Ajusta o tamanho da fonte */
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.app-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.app-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: calc(30% - 20px); /* Define a largura de cada item */
+  background-color: #222; /* Cor de fundo para o tema noturno */
+}
+
+.app-item:nth-child(even) {
+  margin-right: 0; /* Remove a margem à direita para o último item de cada linha */
 }
 
 .app-item-photo {
-  width: 50%;
-  height: auto;
-  align-self: center;
+  margin-bottom: 10px;
 }
 
-.botao-add {
-  width: 10rem;
-  height: auto;
-  background-color: orange;
-  color: white;
-  border-radius: 5px;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  font-weight: 400px;
-  font-size: 20px;
-  border: none;
-  margin-top: 15px;
-  transition: background-color 0.5s ease;
-}
-.botao-add button:active {
-  background-color: darkorange; /* Defina a cor de fundo desejada */
-  color: white; /* Defina a cor do texto */
-}
-
-.botao-opcao-negativo {
-  background-color: rgba(218, 55, 33, 0.91);
-  border-radius: 4px;
-  border: none;
-  width: 5rem;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  margin-right: 3%;
-  flex: 1;
-}
-.botao-opcao-positivo {
-  background-color: orange;
-  border-radius: 4px;
-  border: none;
-  width: 5rem;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  flex: 1;
-  transition: background-color 0.5s ease;
-}
-.botao-opcao-positivo button:active {
-  background-color: black; /* Defina a cor de fundo desejada */
-  color: white; /* Defina a cor do texto */
-}
-.botoes-opcoes {
-  display: flex;
-  margin-top: 15px;
-}
-
-.cafe-item-price {
-  font-weight: bold;
-}
-
-.cafe-item-title {
-  font-weight: bold;
+.app-item-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .cafe-item-label {
+  font-size: 18px;
   font-weight: bold;
-  margin-top: 15px;
-  color: whitesmoke;
-  flex-direction: column;
 }
 .cafe-item-label span {
   display: block;
+}
+
+.cafe-item-price {
+  margin-left: 5px;
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: space-between; /* Adiciona espaço entre os botões */
+  margin-top: 10px;
+}
+
+.botao-add,
+.botao-opcao-negativo,
+.botao-opcao-positivo {
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-add {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.botao-opcao-negativo,
+.botao-opcao-positivo {
+  width: 48%; /* Define a largura dos botões positivo e negativo */
+}
+
+.botao-opcao-negativo {
+  background-color: #dc3545;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.botao-opcao-positivo {
+  background-color: #28a745;
+  color: whitesmoke;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+
+.botao-add:hover,
+.botao-opcao-negativo:hover,
+.botao-opcao-positivo:hover {
+  background-color: #0056b3;
+}
+
+.botoes-container {
+  display: flex;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  margin-top: 10px;
 }
