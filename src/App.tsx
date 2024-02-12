@@ -57,7 +57,8 @@ const App: React.FC = () => {
         <h1>Olá, {WebApp.initDataUnsafe?.user?.first_name}</h1>
       </div>
       <div className="app-item">
-        <div className="app-item-counter">{contador}</div>
+        {mostrarBotoes && <div className="app-item-counter">{contador}</div>}
+
         <div className="app-item-photo">
           <img
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Tulip.webp"
@@ -94,7 +95,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="app-item">
-        <div className="app-item-counter">{contador}</div>
+        {mostrarBotoes && <div className="app-item-counter">{contador}</div>}
         <div className="app-item-photo">
           <img
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Hibiscus.webp"
@@ -131,7 +132,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="app-item">
-        <div className="app-item-counter">{contador}</div>
+        {mostrarBotoes && <div className="app-item-counter">{contador}</div>}
         <div className="app-item-photo">
           <img
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Herb.webp"
@@ -168,7 +169,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="app-item">
-        <div className="app-item-counter">{contador}</div>
+        {mostrarBotoes && <div className="app-item-counter">{contador}</div>}
         <div className="app-item-photo">
           <img
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Four%20Leaf%20Clover.webp"
@@ -205,7 +206,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="app-item">
-        <div className="app-item-counter">{contador}</div>
+        {mostrarBotoes && <div className="app-item-counter">{contador}</div>}
         <div className="app-item-photo">
           <img
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/Snowflake.webp"
@@ -242,7 +243,7 @@ const App: React.FC = () => {
         </div>
       </div>
       <div className="app-item">
-        <div className="app-item-counter">{contador}</div>
+        {mostrarBotoes && <div className="app-item-counter">{contador}</div>}
         <div className="app-item-photo">
           <img
             src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Telegram-Animated-Emojis/main/Animals%20and%20Nature/High%20Voltage.webp"
