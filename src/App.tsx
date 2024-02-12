@@ -7,7 +7,7 @@ WebApp.MainButton.onClick(() => {
   WebApp.showAlert("ALLOHA!!!");
 });
 
-const data = WebApp.initData;
+const data = WebApp.initData.toString();
 
 export default function App() {
   return (
