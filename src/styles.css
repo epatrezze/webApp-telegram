@@ -25,7 +25,7 @@
 }
 
 .app-item-photo {
-  width: auto;
+  width: 50%;
   height: auto;
   align-self: center;
 }
