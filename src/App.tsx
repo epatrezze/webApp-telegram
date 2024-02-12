@@ -8,6 +8,7 @@ WebApp.MainButton.onClick(() => {
   WebApp.showAlert("Compra finalizada!");
   const data = "data";
   WebApp.sendData(data);
+  WebApp.close();
 });
 
 interface ItemProps {
