@@ -52,8 +52,7 @@ const App: React.FC = () => {
 
   return (
     <div className="App">
-      <p>Olá, {WebApp.initData}</p>
-      <p>Olá, {Window.toString()}</p>
+      <p>Olá, {WebApp.initDataUnsafe?.user?.first_name}</p>
       <div className="app-item">
         <div className="app-item-counter">{contador}</div>
         <div className="app-item-photo">
