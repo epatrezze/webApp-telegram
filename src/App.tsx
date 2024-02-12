@@ -3,9 +3,11 @@ import WebApp from "@twa-dev/sdk";
 import "./styles.css";
 
 WebApp.MainButton.show();
-WebApp.MainButton.setText("Alloha");
+WebApp.MainButton.setText("Finalizar Compra");
 WebApp.MainButton.onClick(() => {
-  WebApp.showAlert("ALLOHA!!!");
+  WebApp.showAlert("Compra finalizada!");
+  const data = "data";
+  WebApp.sendData(data);
 });
 
 interface ItemProps {
