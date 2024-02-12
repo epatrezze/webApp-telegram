@@ -2,6 +2,12 @@ import React, { useState } from "react";
 import WebApp from "@twa-dev/sdk";
 import "./styles.css";
 import { Telegram } from "@twa-dev/types";
+import { BackButton } from "@twa-dev/sdk/react";
+import { MainButton } from "@twa-dev/sdk/react";
+
+<MainButton text="Finalizar" onClick={() => alert("submitted")} />;
+
+<BackButton onClick={() => window.history.back()} />;
 
 declare global {
   interface Window {
